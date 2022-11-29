@@ -2,6 +2,8 @@
   display: flex;
 }
 
+/* サイドバー */
+
 .side-bar {
   background-color: #f7bd8f;
   width: 300px;
@@ -11,14 +13,44 @@
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-housework a{
+  font-size: 16px;
+  /*  border: 2px solid lightblue;  */
+  padding: 14px;
+  color: #FAFAFA;
+  text-decoration: none;
 }
 
 .houseworks {
   background-color: #fddea5;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
 }
 
+.housework {
+  padding: 20px 0 40px;
+}
+
+.housework-name a{
+  text-decoration: none;
+  color: #33271e
+  ;
+}
+
+
+/* 記録画面 */
 
 .record {
   background-color: #fdeff2;
