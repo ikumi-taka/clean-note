@@ -60,12 +60,61 @@
 .records-header {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  color: #33271e;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.header-button {
+  margin-top: 40px;
+}
+
+.header-button a{
+  text-decoration: none;
+  /* border: 1px solid gray; */
+  color: #33271e;
+  padding: 20px;
 }
 
 .records {
   background-color: #fef4f4;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.main-record {
+  margin: 10px 0 0 0;
+}
+
+.upper-record {
+  display: flex;
+}
+
+.record-user {
+  color: #33271e;
+  font-size: 16px;
+}
+
+.record-date {
+  color: #33271e;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-record {
+  margin-top: 10px;
+}
+
+.record-content {
+  color: #33271e;
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .form {
