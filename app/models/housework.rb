@@ -1,0 +1,2 @@
+class Housework < ApplicationRecord
+end

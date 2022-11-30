@@ -20,10 +20,10 @@
 
 | Column         | Type   | Options     |
 |----------------|--------|-------------|
-| image          | string | null: false |
+| image          | string |             |
 | housework_name | string | null: false |
-| type           | string | null: false |
-| buy_date       | string | null: false |
+| type           | string |             |
+| buy_date       | string |             |
 | parts_image    | string |             |
 | parts_name     | string |             |
 | parts_type     | string |             |
