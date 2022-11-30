@@ -4,7 +4,7 @@
 
 | Column             | Type   | Options     |
 |--------------------|--------|-------------|
-| nickname           | string | null: false |
+| name               | string | null: false |
 | email              | string | null: false |
 | encrypted_password | string | null: false |
 
@@ -18,17 +18,17 @@
 
 ## houseworksテーブル
 
-| Column      | Type   | Options     |
-|-------------|--------|-------------|
-| image       | string | null: false |
-| name        | string | null: false |
-| type        | string | null: false |
-| buy_date    | string | null: false |
-| parts_image | string |             |
-| parts_name  | string |             |
-| parts_type  | string |             |
-| exchange    | string |             |
-| nickname    | string | null: false |
+| Column         | Type   | Options     |
+|----------------|--------|-------------|
+| image          | string | null: false |
+| housework_name | string | null: false |
+| type           | string | null: false |
+| buy_date       | string | null: false |
+| parts_image    | string |             |
+| parts_name     | string |             |
+| parts_type     | string |             |
+| exchange       | string |             |
+| name           | string | null: false |
 
 ### Association
 - has_many :housework_users
