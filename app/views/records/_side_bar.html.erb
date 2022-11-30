@@ -1,6 +1,6 @@
 <div class="side-bar-header">
   <div class="header-name">
-    <a href="#">ikumi</a>
+    <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="create-housework">
     <a href="#">家事記録を作成する</a>
