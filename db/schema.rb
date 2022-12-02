@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_30_110925) do
+ActiveRecord::Schema.define(version: 2022_12_02_004622) do
+
+  create_table "housework_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "housework_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["housework_id"], name: "index_housework_users_on_housework_id"
+    t.index ["user_id"], name: "index_housework_users_on_user_id"
+  end
 
   create_table "houseworks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "image"
@@ -38,4 +47,6 @@ ActiveRecord::Schema.define(version: 2022_11_30_110925) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "housework_users", "houseworks"
+  add_foreign_key "housework_users", "users"
 end
