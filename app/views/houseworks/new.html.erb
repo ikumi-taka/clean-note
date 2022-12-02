@@ -1,27 +1,63 @@
-<div class='chat-room-form'>
-  <h1>新規チャットルーム</h1>
-  <%=form_with model: @room, local: true do |f|%>
-    <div class='chat-room-form__field'>
-      <div class='chat-room-form__field--left'>
-        <%= f.label :name, :チャットルーム名, class: 'chat-room-form__label'%>
+<div class='housework-form'>
+  <h1>家事記録を作成しよう！</h1>
+  <%=form_with model: @housework, local: true do |f|%>
+    <div class='housework-form__field'>
+      <div class='housework-form__field--left'>
+        <%= f.label :name, :家電の写真, class: 'housework-form__label'%>
       </div>
-      <div class='chat-room-form__field--right'>
-        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'チャットルーム名を入力してください'%>
+      <div class='housework-form__field--right'>
+        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家事の写真'%>
+      </div>
+      <div class='housework-form__field--left'>
+        <%= f.label :name, :家事名, class: 'housework-form__label'%>
+      </div>
+      <div class='housework-form__field--right'>
+        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家事名を入力してください'%>
+      </div>
+      <div class='housework-form__field--left'>
+        <%= f.label :name, :型式, class: 'housework-form__label'%>
+      </div>
+      <div class='housework-form__field--right'>
+        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家電の型式を入力してください'%>
+      </div>
+      <div class='housework-form__field--left'>
+        <%= f.label :name, :購入日, class: 'housework-form__label'%>
+      </div>
+      <div class='housework-form__field--right'>
+        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家電の購入日を入力してください'%>
+      </div>
+      <div class='housework-form__field--left'>
+        <%= f.label :name, :消耗品名, class: 'housework-form__label'%>
+      </div>
+      <div class='housework-form__field--right'>
+        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '消耗品名を入力してください'%>
+      </div>
+      <div class='housework-form__field--left'>
+        <%= f.label :name, :消耗品型式, class: 'housework-form__label'%>
+      </div>
+      <div class='housework-form__field--right'>
+        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '消耗品の型式を入力してください'%>
+      </div>
+      <div class='housework-form__field--left'>
+        <%= f.label :name, :交換頻度, class: 'housework-form__label'%>
+      </div>
+      <div class='housework-form__field--right'>
+        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '消耗品の交換頻度を入力してください'%>
       </div>
     </div>
-    <div class='chat-room-form__field'>
+    <div class='housework-form__field'>
     </div>
-    <div class='chat-room-form__field'>
-      <div class='chat-room-form__field--left'>
-        <label class='chat-room-form__label' for='chat_room_チャットメンバー'>チャットメンバー</label>
+    <div class='housework-form__field'>
+      <div class='housework-form__field--left'>
+        <label class='housework-form__label' for='housework_チャットメンバー'>メンバー</label>
       </div>
-      <div class='chat-room-form__field--right'>
+      <div class='housework-form__field--right'>
       </div>
     </div>
-    <div class='chat-room-form__field'>
-      <div class='chat-room-form__field--left'></div>
-      <div class='chat-room-form__field--right'>
-        <%= f.submit class: 'chat-room-form__action-btn'%>
+    <div class='housework-form__field'>
+      <div class='housework-form__field--left'></div>
+      <div class='housework-form__field--right'>
+        <%= f.submit class: 'housework-form__action-btn'%>
       </div>
     </div>
   <% end %>

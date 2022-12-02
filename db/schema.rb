@@ -17,6 +17,9 @@ ActiveRecord::Schema.define(version: 2022_11_30_110925) do
     t.string "housework_name", null: false
     t.string "type"
     t.string "buy_date"
+    t.string "parts_name"
+    t.string "parts_type"
+    t.string "exchange"
     t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
