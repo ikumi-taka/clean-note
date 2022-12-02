@@ -54,6 +54,12 @@
       <div class='housework-form__field--right'>
       </div>
     </div>
+      <select>
+        <option value="">共有メンバーを選択してください</option>
+        <% User.where.not(id: current_user.id).each do |user| %>
+        <option><%= user.name %></option>
+        <% end %>
+      </select>
     <div class='housework-form__field'>
       <div class='housework-form__field--left'></div>
       <div class='housework-form__field--right'>
