@@ -1,21 +1,21 @@
 <div class='housework-form'>
-  <h1>家事記録を作成しよう！</h1>
+  <h1>掃除記録を作成しよう！</h1>
   <%=form_with model: @housework, local: true do |f|%>
     <div class='housework-form__field'>
       <div class='housework-form__field--left'>
         <%= f.label :name, :家電の写真, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
-        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家事の写真'%>
+        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家事の写真を選択してください'%>
       </div>
       <div class='housework-form__field--left'>
-        <%= f.label :name, :家事名, class: 'housework-form__label'%>
+        <%= f.label :name, :家電名, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
-        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家事名を入力してください'%>
+        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家電名を入力してください'%>
       </div>
       <div class='housework-form__field--left'>
-        <%= f.label :name, :型式, class: 'housework-form__label'%>
+        <%= f.label :name, :家電の型式, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
         <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家電の型式を入力してください'%>
@@ -49,17 +49,18 @@
     </div>
     <div class='housework-form__field'>
       <div class='housework-form__field--left'>
-        <label class='housework-form__label' for='housework_チャットメンバー'>メンバー</label>
+        <label class='housework-form__label' for='housework_メンバー'>メンバー</label>
       </div>
       <div class='housework-form__field--right'>
+        <select name="housework[user_ids][]">
+          <option value="">共有メンバーを選択してください</option>
+          <% User.where.not(id: current_user.id).each do |user| %>
+          <option value=<%= user.id %>><%= user.name %></option>
+          <% end %>
+        </select>
       </div>
     </div>
-      <select>
-        <option value="">共有メンバーを選択してください</option>
-        <% User.where.not(id: current_user.id).each do |user| %>
-        <option><%= user.name %></option>
-        <% end %>
-      </select>
+      <input name="housework[user_ids][]" type="hidden" value=<%= current_user.id %>>
     <div class='housework-form__field'>
       <div class='housework-form__field--left'></div>
       <div class='housework-form__field--right'>

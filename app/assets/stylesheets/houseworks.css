@@ -1,6 +1,6 @@
 h1 {
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   text-align: center;
 }
@@ -27,7 +27,7 @@ li {
   width: 980px;
   margin: 60px auto;
   padding: 40px;
-  background-color: #fff;
+  background-color: #fdeff2;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
@@ -56,7 +56,7 @@ li {
   display: inline-block;
   padding: 12px 20px;
   color: #fff;
-  background-color: #38aef0;
+  background-color: #f08300;
   border: 0;
 }
 .housework-form__field {
@@ -73,7 +73,7 @@ li {
   padding-right: 20px;
   padding-left: 20px;
   box-sizing: border-box;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 .housework-form__field--right {
   float: right;
