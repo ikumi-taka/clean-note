@@ -3,12 +3,12 @@
     <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="create-housework">
-    <a href="#">掃除記録を作成する</a>
+    <%= link_to "掃除記録を作成する", new_housework_path %>
   </div>
 </div>
 
 <div class="houseworks">
-  <% current_user.houseworks.each do |room| %>
+  <% current_user.houseworks.each do |housework| %>
     <div class="housework">
       <div class="housework-name">
         <a href="#"><%= housework.name %></a>
