@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2022_12_02_004622) do
   create_table "houseworks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "image"
     t.string "housework_name", null: false
-    t.string "type"
+    t.string "housework_type"
     t.string "buy_date"
     t.string "parts_name"
     t.string "parts_type"

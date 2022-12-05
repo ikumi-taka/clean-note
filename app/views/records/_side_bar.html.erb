@@ -8,9 +8,11 @@
 </div>
 
 <div class="houseworks">
-  <div class="housework">
-    <div class="housework-name">
-      <a href="#">加湿器</a>
+  <% current_user.houseworks.each do |room| %>
+    <div class="housework">
+      <div class="housework-name">
+        <a href="#"><%= housework.name %></a>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>

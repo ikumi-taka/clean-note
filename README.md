@@ -22,7 +22,7 @@
 |----------------|--------|-------------|
 | image          | string |             |
 | housework_name | string | null: false |
-| type           | string |             |
+| housework_type | string |             |
 | buy_date       | string |             |
 | parts_image    | string |             |
 | parts_name     | string |             |

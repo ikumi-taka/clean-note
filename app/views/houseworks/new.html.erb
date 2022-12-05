@@ -3,46 +3,46 @@
   <%=form_with model: @housework, local: true do |f|%>
     <div class='housework-form__field'>
       <div class='housework-form__field--left'>
-        <%= f.label :name, :家電の写真, class: 'housework-form__label'%>
+        <%= f.label :image, :家電の写真, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
-        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家事の写真を選択してください'%>
+        <%= f.text_field :image, class: 'housework_name housework-form__input', placeholder: '家事の写真を選択してください'%>
       </div>
       <div class='housework-form__field--left'>
-        <%= f.label :name, :家電名, class: 'housework-form__label'%>
+        <%= f.label :housework_name, :家電名, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
-        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家電名を入力してください'%>
+        <%= f.text_field :housework_name, class: 'housework_name housework-form__input', placeholder: '家電名を入力してください'%>
       </div>
       <div class='housework-form__field--left'>
-        <%= f.label :name, :家電の型式, class: 'housework-form__label'%>
+        <%= f.label :housework_type, :家電の型式, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
-        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家電の型式を入力してください'%>
+        <%= f.text_field :housework_type, class: 'housework_name housework-form__input', placeholder: '家電の型式を入力してください'%>
       </div>
       <div class='housework-form__field--left'>
-        <%= f.label :name, :購入日, class: 'housework-form__label'%>
+        <%= f.label :buy_date, :購入日, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
-        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '家電の購入日を入力してください'%>
+        <%= f.text_field :buy_date, class: 'housework_name housework-form__input', placeholder: '家電の購入日を入力してください'%>
       </div>
       <div class='housework-form__field--left'>
-        <%= f.label :name, :消耗品名, class: 'housework-form__label'%>
+        <%= f.label :parts_name, :消耗品名, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
-        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '消耗品名を入力してください'%>
+        <%= f.text_field :parts_name, class: 'housework_name housework-form__input', placeholder: '消耗品名を入力してください'%>
       </div>
       <div class='housework-form__field--left'>
-        <%= f.label :name, :消耗品型式, class: 'housework-form__label'%>
+        <%= f.label :parts_type, :消耗品型式, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
-        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '消耗品の型式を入力してください'%>
+        <%= f.text_field :parts_type, class: 'housework_name housework-form__input', placeholder: '消耗品の型式を入力してください'%>
       </div>
       <div class='housework-form__field--left'>
-        <%= f.label :name, :交換頻度, class: 'housework-form__label'%>
+        <%= f.label :exchange, :交換頻度, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
-        <%= f.text_field :name, class: 'housework_name housework-form__input', placeholder: '消耗品の交換頻度を入力してください'%>
+        <%= f.text_field :exchange, class: 'housework_name housework-form__input', placeholder: '消耗品の交換頻度を入力してください'%>
       </div>
     </div>
     <div class='housework-form__field'>
@@ -55,12 +55,12 @@
         <select name="housework[user_ids][]">
           <option value="">共有メンバーを選択してください</option>
           <% User.where.not(id: current_user.id).each do |user| %>
-          <option value=<%= user.id %>><%= user.name %></option>
+            <option value=<%= user.id %>><%= user.name %></option>
           <% end %>
         </select>
+        <input name="housework[user_ids][]" type="hidden" value=<%= current_user.id %>>
       </div>
     </div>
-      <input name="housework[user_ids][]" type="hidden" value=<%= current_user.id %>>
     <div class='housework-form__field'>
       <div class='housework-form__field--left'></div>
       <div class='housework-form__field--right'>

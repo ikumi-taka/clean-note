@@ -3,7 +3,7 @@ class CreateHouseworks < ActiveRecord::Migration[6.0]
     create_table :houseworks do |t|
       t.string :image
       t.string :housework_name, null: false
-      t.string :type
+      t.string :housework_type
       t.string :buy_date
       t.string :parts_name
       t.string :parts_type
