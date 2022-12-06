@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_02_004622) do
+ActiveRecord::Schema.define(version: 2022_12_06_120158) do
 
   create_table "housework_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "housework_id", null: false
@@ -33,6 +33,16 @@ ActiveRecord::Schema.define(version: 2022_12_02_004622) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "records", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "content"
+    t.bigint "housework_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["housework_id"], name: "index_records_on_housework_id"
+    t.index ["user_id"], name: "index_records_on_user_id"
+  end
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", default: "", null: false
@@ -48,4 +58,6 @@ ActiveRecord::Schema.define(version: 2022_12_02_004622) do
 
   add_foreign_key "housework_users", "houseworks"
   add_foreign_key "housework_users", "users"
+  add_foreign_key "records", "houseworks"
+  add_foreign_key "records", "users"
 end
