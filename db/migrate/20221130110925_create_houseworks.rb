@@ -8,7 +8,7 @@ class CreateHouseworks < ActiveRecord::Migration[6.0]
       t.string :parts_name
       t.string :parts_type
       t.string :exchange
-      t.string :name, null: false
+      #t.string :name
       t.timestamps
     end
   end

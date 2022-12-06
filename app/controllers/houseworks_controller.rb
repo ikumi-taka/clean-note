@@ -18,6 +18,6 @@ class HouseworksController < ApplicationController
 
   private
   def housework_params
-    params.require(:housework).permit(:image, :name, :housework_name, :housework_type, :buy_date, :parts_name, :parts_type, :exchange, user_ids: [])
+    params.require(:housework).permit(:image, :housework_name, :housework_type, :buy_date, :parts_name, :parts_type, :exchange, user_ids: [])
   end
 end

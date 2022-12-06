@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 2022_12_02_004622) do
     t.string "parts_name"
     t.string "parts_type"
     t.string "exchange"
-    t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
