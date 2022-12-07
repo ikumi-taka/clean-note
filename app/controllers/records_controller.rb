@@ -7,7 +7,11 @@ class RecordsController < ApplicationController
   def create
     @housework = Housework.find(params[:housework_id])
     @record = @housework.records.new(record_params)
-    @record.save
+    if @record.save
+      redirect_to housework_records_path(@housework)
+    else
+      render :index
+    end
   end
 
   private
