@@ -27,7 +27,6 @@
         </div>
       </div>
     </div>
-
     <div class="main-record">
       <div class="upper-record">
         <div class="record-user">
@@ -44,11 +43,9 @@
       </div>
     </div>
   </div>
-
-
-<div class="form">
+<%= form_with model: [@housework, @record], class: 'form', local: true do |f| %>
   <div class="form-input">
-    <input class="form-record" placeholder= "type a record">
+    <%= f.text_field :content, class: 'form-record', placeholder: 'type a content' %>
   </div>
-  <input class="form-submit" type="submit" value="送信">
-</div>
+  <%= f.submit '送信', class: 'form-submit' %>
+<% end %>
