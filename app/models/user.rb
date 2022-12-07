@@ -8,4 +8,5 @@ class User < ApplicationRecord
 
   has_many :housework_users
   has_many :houseworks, through: :housework_users
+  has_many :records
 end
