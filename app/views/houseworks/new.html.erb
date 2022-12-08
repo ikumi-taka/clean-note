@@ -1,4 +1,9 @@
+
+
 <div class='housework-form'>
+  <div class="home_link">
+    <%= link_to "back home", root_path %>
+  </div>
   <h1>掃除記録を作成しよう！</h1>
   <%=form_with model: @housework, local: true do |f|%>
     <div class='housework-form__field'>
@@ -6,7 +11,7 @@
         <%= f.label :image, :家電の写真, class: 'housework-form__label'%>
       </div>
       <div class='housework-form__field--right'>
-        <%= f.text_field :image, class: 'housework_name housework-form__input', placeholder: '家事の写真を選択してください'%>
+        <%= f.text_field :image, class: 'housework_name housework-form__input', placeholder: '家電の写真を選択してください'%>
       </div>
       <div class='housework-form__field--left'>
         <%= f.label :housework_name, :家電名, class: 'housework-form__label'%>
