@@ -2,6 +2,7 @@ class RecordsController < ApplicationController
   def index
     @record = Record.new
     @housework = Housework.find(params[:housework_id])
+    @records = @housework.records.includes(:user)
   end
 
   def create
@@ -10,6 +11,7 @@ class RecordsController < ApplicationController
     if @record.save
       redirect_to housework_records_path(@housework)
     else
+      @records = @housework.records.includes(:user)
       render :index
     end
   end
