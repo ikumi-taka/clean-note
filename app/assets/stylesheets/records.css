@@ -58,16 +58,26 @@
 }
 
 .records-header {
-  height: 100px;
+  height: 120px;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
+  /*overflow: scroll;*/
 }
 
 .header-title {
   color: #33271e;
   font-size: 24px;
   margin-top: 36px;
+}
+
+.center-header {
+  display: grid;
+  margin: auto;
+}
+
+.center-header__center {
+
 }
 
 .header-button {
@@ -83,7 +93,7 @@
 
 .records {
   background-color: #fef4f4;
-  height: calc(100vh - 100px - 90px);
+  height: calc(100vh - 120px - 90px);
   padding: 46px 40px 0;
   overflow: scroll;
 }

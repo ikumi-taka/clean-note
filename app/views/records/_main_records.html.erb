@@ -1,13 +1,26 @@
 <div class="records-header">
   <div class="left-header">
     <div class="header-title">
-      <%= @housework.housework_name %>
+      <%= @housework.housework_name %><%# ここに家電の画像付けたい %>
     </div>
   </div>
+
+  <div class="center-header">
+  <%#家電情報を表示%>
+    <div class="center-header__center">
+      型式:<%= @housework.housework_type %>
+      , 購入日:<%= @housework.buy_date %>
+    </div>
+    <div class="center-header__right">
+      消耗品名:<%= @housework.parts_name %>
+      , 消耗品の型式:<%= @housework.parts_type %>
+      , 交換頻度:<%= @housework.exchange %>
+    </div>
+  </div>
+
   <div class="right-header">
     <div class="header-button">
-      <%= link_to "掃除記録を削除する", housework_path(@housework), method: :delete %>
-      <a href="#">掃除記録を削除する</a>
+      <%= link_to "掃除記録を削除", housework_path(@housework), method: :delete %>
     </div>
   </div>
 </div>
