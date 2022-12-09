@@ -58,11 +58,11 @@
 }
 
 .records-header {
-  height: 130px;
+  height: 110px;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .header-title {
@@ -98,7 +98,7 @@
 
 .records {
   background-color: #fef4f4;
-  height: calc(100vh - 130px - 90px);
+  height: calc(100vh - 110px - 90px);
   padding: 46px 40px 0;
   overflow: scroll;
 }
