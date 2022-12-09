@@ -32,6 +32,11 @@ li {
   border-radius: 5px;
   box-sizing: border-box;
 }
+
+.link {
+  text-decoration: none;
+}
+
 .housework-form__errors {
   margin: 30px 0;
   padding: 20px 40px;
@@ -94,4 +99,17 @@ select {
 
 .field_with_errors {
   display: contents;
+}
+
+.form-image {
+  font-size: 15px;
+  background-color: pink;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }
