@@ -26,8 +26,12 @@
 </div>
 
 <div class="records">
-  <%= render partial: 'record', collection: @records %>
+  <div class="housework-images">
+  <%= image_tag @housework.image.variant(resize: '120x120'), class: 'housework-image' if @housework.image.attached? %>
+  </div>
+    <%= render partial: 'record', collection: @records %>
 </div>
+
 
 <%= form_with model: [@housework, @record], class: 'form', local: true do |f| %>
   <div class="form-input">
