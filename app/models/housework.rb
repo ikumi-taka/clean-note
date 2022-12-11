@@ -5,5 +5,5 @@ class Housework < ApplicationRecord
   has_one_attached :image
 
   validates :housework_name, presence: true
-  #validates :name, presence: true
+
 end

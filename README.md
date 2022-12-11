@@ -24,11 +24,9 @@
 | housework_name | string | null: false |
 | housework_type | string |             |
 | buy_date       | string |             |
-| parts_image    | string |             |
 | parts_name     | string |             |
 | parts_type     | string |             |
 | exchange       | string |             |
-| name           | string | null: false |
 
 ### Association
 - has_many :housework_users
@@ -52,7 +50,6 @@
 
 | Column    | Type       | Options                        |
 |-----------|------------|--------------------------------|
-| task      | string     | null: false                    |
 | content   | string     | null: false                    |
 | user      | references | null: false, foreign_key: true |
 | housework | references | null: false, foreign_key: true |
