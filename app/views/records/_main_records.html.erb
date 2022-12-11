@@ -1,8 +1,12 @@
 <div class="records-header">
   <div class="left-header">
     <div class="header-title">
-      <%= @housework.housework_name %><%# ここに家電の画像付けたい %>
+      <%= @housework.housework_name %>
     </div>
+    <div class="housework-images"><%# ここに家電の画像付けたい %>
+      <%= image_tag @housework.image.variant(resize: '110x110'), class: 'housework-image' if @housework.image.attached? %>
+    </div>
+
   </div>
 
   <div class="center-header">
@@ -26,9 +30,6 @@
 </div>
 
 <div class="records">
-  <div class="housework-images">
-  <%= image_tag @housework.image.variant(resize: '120x120'), class: 'housework-image' if @housework.image.attached? %>
-  </div>
     <%= render partial: 'record', collection: @records %>
 </div>
 
