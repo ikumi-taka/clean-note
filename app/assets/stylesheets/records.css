@@ -66,18 +66,24 @@
 }
 
 .left-header {
-  display: flex;
+  /* display: flex; */
 }
 
 .header-title {
   color: #33271e;
   font-size: 24px;
-  margin-top: 36px;
+  display: flex;
+  /* margin-top: 10px; */
 }
 
 /* .housework-images {
   margin: 10px
 } */
+
+.header-houseworks_name {
+  margin: auto;
+  padding-left: 10px;
+}
 
 .center-header {
   display: grid;

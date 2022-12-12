@@ -1,10 +1,12 @@
 <div class="records-header">
   <div class="left-header">
     <div class="header-title">
-      <%= @housework.housework_name %>
-    </div>
-    <div class="housework-images"><%# ここに家電の画像付けたい %>
+      <div class="housework-images"><%# ここに家電の画像付けたい %>
       <%= image_tag @housework.image.variant(resize: '110x110'), class: 'housework-image' if @housework.image.attached? %>
+      </div>
+      <div class="header-houseworks_name">
+        <%= @housework.housework_name %>
+      </div>
     </div>
 
   </div>
