@@ -49,6 +49,8 @@ test:
 #
 production:
   <<: *default
-  database: clean_note_production
-  username: clean_note
-  password: <%= ENV['CLEAN_NOTE_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  database: clean-note_production
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
