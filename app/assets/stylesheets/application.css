@@ -20,11 +20,11 @@
 
 @media (max-width: 599px) {
   .side-bar-header {
-    width: 119px;
+    width: 50px;
     font-size: 20px;
   }
 
   .records-header {
-    width: 480px;
+    width: 549px;
   }
 }
