@@ -32,7 +32,7 @@ Password: 123456
 いつ掃除をしたのかスマホでサッと記録・確認できるようにして掃除の計画をスムーズに立てたいと思い作成した。
 
 # 洗い出した要件
-スプレッドシートのリンク貼り付け
+
 
 # 実装した機能についての画像やGIFおよびその説明
 [![Image from Gyazo](https://i.gyazo.com/557766263d43befe816b33b8a57e5495.png)](https://gyazo.com/557766263d43befe816b33b8a57e5495)
@@ -52,6 +52,18 @@ Password: 123456
 # データベース設計(ER図)
 [![Image from Gyazo](https://i.gyazo.com/f671cc39c379f89cdf9680b9bcc1485e.png)](https://gyazo.com/f671cc39c379f89cdf9680b9bcc1485e)
 
+# 画面遷移図
+[![](https://mermaid.ink/img/pako:eNqrVkrOT0lVslJKL0osyFAIcYnJUwACx-jHzWsfN2143LTkcfNm_WfTNrxY1v985u6XPZseN8963LzncdOOWAVdXTsnoMKOx83Nj5unIyQgZmCVUrABanIGyiwDC2wDks-3r3g5u4143S7Rz_qaX85c8mLFDKBznuyd86xjAvG6XVF0P-ua-nzFfmTdSjpKualFuYmZKcBAqQaZFqNUkpGamxqjZAVkpqSmJZbmlMQoxeTVApUmlpbkB1fmJStZlRSVpuoolRakJJakumQmAoMzV8kqLTGnOLUWAITps5g?type=png)](https://mermaid.live/edit#pako:eNqrVkrOT0lVslJKL0osyFAIcYnJUwACx-jHzWsfN2143LTkcfNm_WfTNrxY1v985u6XPZseN8963LzncdOOWAVdXTsnoMKOx83Nj5unIyQgZmCVUrABanIGyiwDC2wDks-3r3g5u4143S7Rz_qaX85c8mLFDKBznuyd86xjAvG6XVF0P-ua-nzFfmTdSjpKualFuYmZKcBAqQaZFqNUkpGamxqjZAVkpqSmJZbmlMQoxeTVApUmlpbkB1fmJStZlRSVpuoolRakJJakumQmAoMzV8kqLTGnOLUWAITps5g)
+
+# ローカルでの動作方法
+% git clone https://github.com/ikumi-taka/clean-note.git
+% cd clean-note
+% bundle install
+% yarn install
+
+# 工夫したポイント
+開発する事前準備として、テーブル名やカラム名の洗い出し、作成手順をGithubのプロジェクトボードを利用してまとめてから開発した。
+登録した家電が一覧でわかるようにサイドバーを設置した。
 
 ## usersテーブル
 
