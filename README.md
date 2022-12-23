@@ -35,16 +35,16 @@ Password: 123456
 スプレッドシートのリンク貼り付け
 
 # 実装した機能についての画像やGIFおよびその説明
-https://gyazo.com/557766263d43befe816b33b8a57e5495
+[![Image from Gyazo](https://i.gyazo.com/557766263d43befe816b33b8a57e5495.png)](https://gyazo.com/557766263d43befe816b33b8a57e5495)
 アカウント登録が完了するとマイページに遷移。
 
-https://gyazo.com/9b0ca4942ad84d9114b9cbdd9eab332f
+[![Image from Gyazo](https://i.gyazo.com/9b0ca4942ad84d9114b9cbdd9eab332f.gif)](https://gyazo.com/9b0ca4942ad84d9114b9cbdd9eab332f)
 掃除記録の作成ページに移動し、記録をしたい家電情報を入力する。
 
-https://gyazo.com/9d1a5ab2d193dfc7a620edca0c357977
+[![Image from Gyazo](https://i.gyazo.com/9d1a5ab2d193dfc7a620edca0c357977.gif)](https://gyazo.com/9d1a5ab2d193dfc7a620edca0c357977)
 情報入力をしcreateボタンを押すとマイページに戻る。左サイドバーに家電の名前が表示される。
 
-https://gyazo.com/0e05fb435a09972f8f3ab27e92b7f67f
+[![Image from Gyazo](https://i.gyazo.com/0e05fb435a09972f8f3ab27e92b7f67f.gif)](https://gyazo.com/0e05fb435a09972f8f3ab27e92b7f67f)
 サイドバーから家電の名前をクリックすると、掃除記録をするページがメイン画面に表示される。
 メイン画面の上部には、家電情報を登録した内容(家電の写真や名前、型式など)が表示されるようになっている。
 ページ下の入力画面より、記録したい事柄「○○を掃除した」「消耗品を交換した」などを入力し送信すると表記される。
