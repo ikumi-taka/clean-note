@@ -53,7 +53,7 @@ Password: 123456
 [![Image from Gyazo](https://i.gyazo.com/f671cc39c379f89cdf9680b9bcc1485e.png)](https://gyazo.com/f671cc39c379f89cdf9680b9bcc1485e)
 
 # 画面遷移図
-[![](https://mermaid.ink/img/pako:eNqrVkrOT0lVslJKL0osyFAIcYnJUwACx-jHzWsfN2143LTkcfNmfRhn0eOmZY-bO_SfTdvwYln_85m7X_Zsetw863HznsdNO2IVdHXtnIAaOx43Nz9uno6QgJiJVUrBBqjJGSizDCywDUg-377i5ew24nW7RD_ra345c8mLFTOAznmyd86zjgnE63ZF0f2sa-rzFfsRSpR0lHJTi3ITM1OAQVQNMitGqSQjNTc1RskKyExJTUsszSmJUYrJqwUqTSwtyQ-uzEtWsiopKk3VUSotSEksSXXJTAQGbi5MMDUlsyS_yBcS6uDArwUAfSHDbw?type=png)](https://mermaid.live/edit#pako:eNqrVkrOT0lVslJKL0osyFAIcYnJUwACx-jHzWsfN2143LTkcfNmfRhn0eOmZY-bO_SfTdvwYln_85m7X_Zsetw863HznsdNO2IVdHXtnIAaOx43Nz9uno6QgJiJVUrBBqjJGSizDCywDUg-377i5ew24nW7RD_ra345c8mLFTOAznmyd86zjgnE63ZF0f2sa-rzFfsRSpR0lHJTi3ITM1OAQVQNMitGqSQjNTc1RskKyExJTUsszSmJUYrJqwUqTSwtyQ-uzEtWsiopKk3VUSotSEksSXXJTAQGbi5MMDUlsyS_yBcS6uDArwUAfSHDbw)
+[![Image from Gyazo](https://i.gyazo.com/0140c5b2de395a82be593d2ba10acb90.png)](https://gyazo.com/0140c5b2de395a82be593d2ba10acb90)
 
 # ローカルでの動作方法
 % git clone https://github.com/ikumi-taka/clean-note.git
