@@ -10,9 +10,9 @@ Clean Note
 https://clean-note.onrender.com
 
 # テスト用アカウント
-Name: test-acount
-Email: test@test
-Password: 123456
+Name: test-account<br>
+Email: test@test<br>
+Password: 123456<br>
 
 # 利用方法
 1.アカウント新規登録orログインをする
