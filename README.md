@@ -31,7 +31,7 @@ Password: 123456<br>
 そのため、いつ掃除をしたのかスマホでサッと記録・確認できるようにして掃除の計画をスムーズに立てたいと思い作成した。<br>
 
 # 洗い出した要件
-
+https://docs.google.com/spreadsheets/d/1X2rPtoX_PXooqXi414bF87wq0CzMwoMVltkIzj85OI0/edit#gid=982722306
 
 # 実装した機能についての画像やGIFおよびその説明
 [![Image from Gyazo](https://i.gyazo.com/557766263d43befe816b33b8a57e5495.png)](https://gyazo.com/557766263d43befe816b33b8a57e5495)
