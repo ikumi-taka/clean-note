@@ -9,8 +9,8 @@ class User < ApplicationRecord
   has_many :housework_users
   has_many :houseworks, through: :housework_users
   has_many :records
-  has_many :like, dependent: :destroy
-  has_many :like_records, through: :likes, sorce: :record
+  has_many :likes, dependent: :destroy
+  has_many :like_records, through: :likes, source: :record
 
   # likesテーブルにrecord_idが存在しているかどうか検索をかける
   def liked_by?(record_id)
