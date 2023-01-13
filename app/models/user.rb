@@ -9,4 +9,6 @@ class User < ApplicationRecord
   has_many :housework_users
   has_many :houseworks, through: :housework_users
   has_many :records
+  has_many :like, dependent: :destroy
+  has_many :like_records, through: :likes, sorce: :record
 end
