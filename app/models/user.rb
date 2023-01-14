@@ -14,6 +14,6 @@ class User < ApplicationRecord
 
   # likesテーブルにrecord_idが存在しているかどうか検索をかける
   def liked_by?(record_id)
-    likes.where(record_id: recors_id).exists?
+    likes.where(record_id: record_id).exists?
   end
 end

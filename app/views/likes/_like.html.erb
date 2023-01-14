@@ -1,0 +1,11 @@
+<% if user_signed_in? %>
+  <% if current_user.liked_by?(record.id) %>
+    <%= link_to housework_record_like_path(@housework, @record), method: :DELETE, remote: true do %>
+      <i class="fa-regular fa-heart"></i>
+    <% end %>
+  <% else %>
+    <%= link_to housework_like_index_path(@housework, @record), method: :POST, remote: true do %>
+      <i class="fa-solid fa-heart"></i>
+    <% end %>
+  <% end %>
+<% end %>
