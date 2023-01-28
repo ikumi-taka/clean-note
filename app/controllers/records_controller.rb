@@ -1,4 +1,6 @@
 class RecordsController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
     @record = Record.new
     @housework = Housework.find(params[:housework_id])

@@ -3,11 +3,18 @@
     <div class="record-user">
       <%= record.user.name %>
     </div>
+    <tbody>
+    <%# <% @records.each do |record| %>
+    <div id="likes_buttons_<%= record.id %>">
+      <tr>
+      <%= render partial: 'likes/like', locals: {record: @record, housework: @housework} %>
+      <%# <%= render 'record', record: record %>
+      </tr>
+    </div>
+    <%# <% end %>
+    </tbody>
     <div class="record-date">
       <%= l record.created_at %>
-    </div>
-    <div id="likes_buttons_<%= @record.id %>">
-      <%= render partial: 'likes/like', locals: {record: @record} %>
     </div>
   </div>
   <div class="lower-record">

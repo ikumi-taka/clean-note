@@ -1,11 +1,15 @@
 <% if user_signed_in? %>
-  <% if current_user.liked_by?(record.id) %>
-    <%= link_to housework_record_like_path(@housework, @record), method: :DELETE, remote: true do %>
-      <i class="fa-regular fa-heart"></i>
-    <% end %>
+  <% if current_user.liked_by?(record.id) %> <%#= いいねの有無を判別 %>
+    <td><%= link_to 'いいねを外す', destroy_like_path(housework, record), method: :delete, remote: true %> <%= record.likes.count %></td>
   <% else %>
-    <%= link_to housework_like_index_path(@housework, @record), method: :POST, remote: true do %>
-      <i class="fa-solid fa-heart"></i>
-    <% end %>
+    <td><%= link_to 'いいね', create_like_path(housework, record), method: :post, remote: true %> <%= record.likes.count %></td>
   <% end %>
 <% end %>
+  <%# <% if user_signed_in? %>
+      <%# <%= link_to housework_record_like_path(@housework, @record), method: :DELETE, remote: true do %>
+      <%# <i class="fa-regular fa-heart"></i> %>
+    <%# <%= link_to housework_like_index_path(@housework, @record), method: :POST, remote: true do %>
+      <%# <i class="fa-solid fa-heart"></i> %>
+    <%# <% end %>
+  <%# <% end %>
+<%# <% end %>
