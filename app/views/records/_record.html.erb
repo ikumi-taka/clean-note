@@ -7,8 +7,7 @@
     <%# <% @records.each do |record| %>
     <div id="likes_buttons_<%= record.id %>">
       <tr>
-      <%= render partial: 'likes/like', locals: {record: @record, housework: @housework} %>
-      <%# <%= render 'record', record: record %>
+      <%= render partial: 'likes/like', locals: {record: record} %>
       </tr>
     </div>
     <%# <% end %>

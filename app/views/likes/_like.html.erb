@@ -1,8 +1,8 @@
 <% if user_signed_in? %>
   <% if current_user.liked_by?(record.id) %> <%#= いいねの有無を判別 %>
-    <td><%= link_to 'いいねを外す', destroy_like_path(housework, record), method: :delete, remote: true %> <%= record.likes.count %></td>
+    <td><%= link_to 'いいねを外す', destroy_like_path(record), method: :delete, remote: true %> <%= record.likes.count %></td>
   <% else %>
-    <td><%= link_to 'いいね', create_like_path(housework, record), method: :post, remote: true %> <%= record.likes.count %></td>
+    <td><%= link_to 'いいね', create_like_path(record), method: :post, remote: true %> <%= record.likes.count %></td>
   <% end %>
 <% end %>
   <%# <% if user_signed_in? %>
