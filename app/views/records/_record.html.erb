@@ -3,15 +3,15 @@
     <div class="record-user">
       <%= record.user.name %>
     </div>
+    <table>
     <tbody>
     <%# <% @records.each do |record| %>
-    <div id="likes_buttons_<%= record.id %>">
-      <tr>
-      <%= render partial: 'likes/like', locals: {record: record} %>
+    <%# <div id="likes_buttons_<%= record.id"> %>
+      <tr id="likes_buttons_<%= record.id %>">
+      <%= render partial: 'likes/like', locals:{record: record} %>
       </tr>
-    </div>
-    <%# <% end %>
     </tbody>
+    </table>
     <div class="record-date">
       <%= l record.created_at %>
     </div>
