@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_08_044927) do
+ActiveRecord::Schema.define(version: 2023_01_13_115411) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -54,6 +54,16 @@ ActiveRecord::Schema.define(version: 2022_12_08_044927) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "record_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["record_id"], name: "index_likes_on_record_id"
+    t.index ["user_id", "record_id"], name: "index_likes_on_user_id_and_record_id", unique: true
+    t.index ["user_id"], name: "index_likes_on_user_id"
+  end
+
   create_table "records", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "content"
     t.bigint "housework_id", null: false
@@ -80,6 +90,8 @@ ActiveRecord::Schema.define(version: 2022_12_08_044927) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "housework_users", "houseworks"
   add_foreign_key "housework_users", "users"
+  add_foreign_key "likes", "records"
+  add_foreign_key "likes", "users"
   add_foreign_key "records", "houseworks"
   add_foreign_key "records", "users"
 end
