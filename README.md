@@ -82,7 +82,6 @@ Githubのプロジェクトボードを利用し、作成手順をまとめて�
 - has_many :housework_users
 - has_many :houseworks, through: :housework_users
 - has_many :records
-- has_many :likes
 
 
 ## houseworksテーブル
@@ -128,14 +127,3 @@ Githubのプロジェクトボードを利用し、作成手順をまとめて�
 ### Association
 - belongs_to :user
 - belongs_to :housework
-- has_many :likes
-
-## likesテーブル
-| Column    | Type       | Options                        |
-|-----------|------------|--------------------------------|
-| user      | references | null: false, foreign_key: true |
-| record    | references | null: false, foreign_key: true |
-
-### Association
-- belongs_to :record
-- belongs_to :user
