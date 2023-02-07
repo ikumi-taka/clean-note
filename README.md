@@ -49,7 +49,7 @@ https://docs.google.com/spreadsheets/d/1X2rPtoX_PXooqXi414bF87wq0CzMwoMVltkIzj85
 ページ下の入力画面より、記録したい事柄「○○を掃除した」「消耗品を交換した」などを入力し送信すると表記される。<br>
 
 # データベース設計(ER図)
-[![Image from Gyazo](https://i.gyazo.com/f671cc39c379f89cdf9680b9bcc1485e.png)](https://gyazo.com/f671cc39c379f89cdf9680b9bcc1485e)
+[![Image from Gyazo](https://i.gyazo.com/eac699738971655be1e9c987cfd910f0.png)](https://gyazo.com/eac699738971655be1e9c987cfd910f0)
 
 # 画面遷移図
 [![Image from Gyazo](https://i.gyazo.com/0140c5b2de395a82be593d2ba10acb90.png)](https://gyazo.com/0140c5b2de395a82be593d2ba10acb90)
